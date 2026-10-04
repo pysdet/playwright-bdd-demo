@@ -1,6 +1,6 @@
 from playwright.sync_api import Page
 
-from custom_types import Params
+from helpers.types import Params
 
 from .components import FooterComponent, HeaderComponent, MenuComponent
 

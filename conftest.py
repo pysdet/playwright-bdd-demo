@@ -6,7 +6,7 @@ import pytest
 from dotenv import load_dotenv
 from playwright.sync_api import Page
 
-from pages import PageObjectManager
+from helpers import POM
 
 PATH = Path(__file__).resolve().parent
 
@@ -36,5 +36,5 @@ def base_url() -> str:
 
 
 @pytest.fixture(scope="function")
-def pom(page: Page) -> PageObjectManager:
-    return PageObjectManager(page)
+def pom(page: Page) -> POM:
+    return POM(page)

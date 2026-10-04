@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from custom_types import Product
+from helpers.types import Product
 
 PATH = Path(__file__).resolve().parent
 
