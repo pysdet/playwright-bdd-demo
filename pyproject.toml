@@ -1,5 +1,17 @@
 [tool.pytest.ini_options]
-base_url = "https://sauce-demo.myshopify.com"
+addopts = """
+    --browser chromium
+    --device "Desktop Chrome"
+    --screenshot only-on-failure
+    --full-page-screenshot
+    --verbose
+    --gherkin-terminal-reporter
+    --cucumberjson=reports/cucumber.json
+"""
+filterwarnings = [
+    "ignore::DeprecationWarning:gherkin.*",  # warning comes from pytest-bdd
+    "ignore::pytest.PytestUnknownMarkWarning",
+]
 
 [tool.ruff]
 line-length = 88
@@ -11,7 +23,6 @@ fixable = ["ALL"]
 
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = ["F401"]
-
 
 [tool.ruff.format]
 quote-style = "double"
