@@ -1,0 +1,15 @@
+[tool.pytest.ini_options]
+base_url = "https://sauce-demo.myshopify.com"
+
+[tool.ruff]
+line-length = 88
+indent-width = 4
+target-version = "py313"
+
+[tool.ruff.lint]
+fixable = ["ALL"]
+
+[tool.ruff.format]
+quote-style = "double"
+skip-magic-trailing-comma = false
+line-ending = "auto"
