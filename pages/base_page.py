@@ -5,12 +5,16 @@ from .components import FooterComponent, HeaderComponent, MenuComponent
 
 class BasePage:
     def __init__(self, page: Page, url: str) -> None:
-        self._page = page
+        self.__page = page
+
         self._url = url
-        # Components
-        self.header = HeaderComponent(page.locator("header"))
-        self.menu = MenuComponent(page.locator("#sidebar"))
-        self.footer = FooterComponent(page.locator("footer"))
+        self._root = page.locator("#main")
+
+        self.breadcrumb = self._root.locator("#breadcrumb")
+
+        self.header = HeaderComponent(self.__page.locator("header"))
+        self.menu = MenuComponent(self.__page.locator("#sidebar"))
+        self.footer = FooterComponent(self.__page.locator("footer"))
 
     def goto(self, params: dict[str, str | int | bool] | None = None) -> str:
         """
@@ -24,11 +28,11 @@ class BasePage:
                 for index, (key, value) in enumerate(params.items())
             ]
             url += "".join(url_params)
-        self._page.goto(url, wait_until="domcontentloaded")
+        self.__page.goto(url, wait_until="domcontentloaded")
         return url
 
     def get_current_url(self) -> str:
         """
         Returns the url in the current page.
         """
-        return self._page.url
+        return self.__page.url

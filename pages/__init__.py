@@ -1,3 +1,23 @@
+from .about_us_page import AboutUsPage
+from .blog_page import BlogPage
+from .catalog_page import CatalogPage
 from .home_page import HomePage
+from .login_page import LoginPage
+from .my_cart_page import MyCartPage
+from .product_page import ProductPage
+from .reset_password_page import ResetPasswordPage
+from .search_page import SearchPage
+from .sign_up_page import SignUpPage
 
-__all__ = ["HomePage"]
+__all__ = [
+    "AboutUsPage",
+    "BlogPage",
+    "CatalogPage",
+    "HomePage",
+    "LoginPage",
+    "MyCartPage",
+    "ProductPage",
+    "ResetPasswordPage",
+    "SearchPage",
+    "SignUpPage",
+]
