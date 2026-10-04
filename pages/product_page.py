@@ -5,7 +5,7 @@ from .components import ProductGridComponent
 
 
 class ProductPage(BasePage):
-    URL = "/collections/frontpage/products"
+    URL = "/products"
 
     def __init__(self, page: Page) -> None:
         super().__init__(page, self.URL)

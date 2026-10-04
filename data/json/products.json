@@ -1,0 +1,44 @@
+[
+  {
+    "id": "flower-print-jeans",
+    "name": "Black heels",
+    "price": 45.0,
+    "sold_out": false
+  },
+  {
+    "id": "bronze-sandals",
+    "name": "Bronze sandals",
+    "price": 39.99,
+    "sold_out": false
+  },
+  {
+    "id": "brown-shades",
+    "name": "Brown Shades",
+    "price": 20.0,
+    "sold_out": true
+  },
+  {
+    "id": "grey-jacket",
+    "name": "Grey jacket",
+    "price": 55.0,
+    "sold_out": false
+  },
+  {
+    "id": "noir-jacket",
+    "name": "Noir jacket",
+    "price": 60.0,
+    "sold_out": false
+  },
+  {
+    "id": "striped-top",
+    "name": "Striped top",
+    "price": 50.0,
+    "sold_out": false
+  },
+  {
+    "id": "white-sandals",
+    "name": "White sandals",
+    "price": 25.0,
+    "sold_out": true
+  }
+]

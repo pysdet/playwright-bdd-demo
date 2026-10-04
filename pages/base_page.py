@@ -1,5 +1,7 @@
 from playwright.sync_api import Page
 
+from custom_types import Params
+
 from .components import FooterComponent, HeaderComponent, MenuComponent
 
 
@@ -16,7 +18,7 @@ class BasePage:
         self.menu = MenuComponent(self.__page.locator("#sidebar"))
         self.footer = FooterComponent(self.__page.locator("footer"))
 
-    def goto(self, params: dict[str, str | int | bool] | None = None) -> str:
+    def goto(self, params: Params | None = None) -> str:
         """
         Goes to the page url using the params if any and waits for the content to load.
         Returns the generated url.
