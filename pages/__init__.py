@@ -8,16 +8,3 @@ from .product_page import ProductPage
 from .reset_password_page import ResetPasswordPage
 from .search_page import SearchPage
 from .sign_up_page import SignUpPage
-
-__all__ = [
-    "AboutUsPage",
-    "BlogPage",
-    "CatalogPage",
-    "HomePage",
-    "LoginPage",
-    "MyCartPage",
-    "ProductPage",
-    "ResetPasswordPage",
-    "SearchPage",
-    "SignUpPage",
-]

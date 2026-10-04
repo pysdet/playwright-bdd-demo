@@ -4,12 +4,3 @@ from .header_component import HeaderComponent
 from .menu_component import MenuComponent
 from .product_card_component import ProductCardComponent
 from .product_grid_component import ProductGridComponent
-
-__all__ = [
-    "BlogEntryComponent",
-    "FooterComponent",
-    "HeaderComponent",
-    "MenuComponent",
-    "ProductCardComponent",
-    "ProductGridComponent",
-]
